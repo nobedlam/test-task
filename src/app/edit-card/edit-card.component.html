@@ -1,0 +1,12 @@
+<form class="form" [formGroup]="cardForm">
+  <label for="name">Название:</label>
+  <input type="text" id="name" formControlName="name" />
+  <label for="model">Марка:</label>
+  <input type="model" id="model" formControlName="model" />
+  <label for="price">Цена:</label>
+  <input type="number" id="price" formControlName="price" />
+  <div class="buttons">
+    <button (click)="saveForm()">Сохранить</button>
+    <button (click)="closeForm()">Отменить</button>
+  </div>
+</form>
